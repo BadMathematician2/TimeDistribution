@@ -23,9 +23,9 @@ class TimeDistribution
             $result[] = rand($free_time/$quantity,$free_time/2)/($quantity*$c);
             $time += $result[$i];
         }
-        $e = ($free_time - $time)/($quantity+1);
+        $leftovers = ($free_time - $time)/($quantity+1);
         for ($i = 0; $i <= $quantity; $i++){
-            $result[$i] += $e;
+            $result[$i] += $leftovers;
         }
 
         return $result;
