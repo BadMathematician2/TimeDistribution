@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Packages\TimeDistribution;
+namespace TimeDistribution;
 
 
 use Illuminate\Support\ServiceProvider;
